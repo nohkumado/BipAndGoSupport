@@ -80,8 +80,8 @@ module frontplatte(dlu,dlo,uxu,uxo,uo,h,w)
     }
   }
 
-  color("magenta") translate([-1.6,19.2,2.0])rotate([90,00,0])cylinder(h=18,d=0.88,$fn=32);
-  color("magenta") translate([-2.38,19.2,9.53])rotate([90,00,0])cylinder(h=18,d=0.88,$fn=32);
+  color("magenta") translate([-1.6,19.2,1.93])rotate([90,00,0])cylinder(h=18,d=0.88,$fn=32);
+  color("magenta") translate([-2.38,19.2,9.52])rotate([90,00,0])cylinder(h=18,d=0.88,$fn=32);
 }
 
 module armhalter(dlu,dlo,uxu,uxo,uo,h,w)
@@ -96,7 +96,7 @@ module armhalter(dlu,dlo,uxu,uxo,uo,h,w)
       translate([0,0,5.212])
       minkowski()
       {
-        translate([.5,0.5,0])cube([12,10,1]); //Einschiebplatte
+        translate([.5,0.5,0.3])cube([12,10,0.7]); //Einschiebplatte
         sphere(.2);
       }
     }
